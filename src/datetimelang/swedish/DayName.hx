@@ -2,7 +2,7 @@
 måndag	tisdag	onsdag	torsdag	fredag	lördag	söndag
 */
 
-package datetimelang.english;
+package datetimelang.swedish;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
