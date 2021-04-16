@@ -2,7 +2,6 @@ package;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
-import ShiftDateTime;
 
 abstract MonthName( DTMonth ) to DTMonth from DTMonth {
     public inline function new( m: DTMonth ){
