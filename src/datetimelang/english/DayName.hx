@@ -2,7 +2,6 @@ package;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
-import ShiftDateTime;
 
 abstract DayName( DTWeekDay ) to DTWeekDay from DTWeekDay {
     public inline
