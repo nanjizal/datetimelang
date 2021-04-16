@@ -7,7 +7,7 @@
 суббота (subbota)
 воскресенье (voskresen'ye)
 */
-package;
+package datetimelang.russian;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
