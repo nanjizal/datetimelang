@@ -58,19 +58,19 @@ abstract DayName( DTWeekDay ) to DTWeekDay from DTWeekDay {
         var d: DTWeekDay = cast this;
         return switch( d ){
             case Monday:
-                return 'måndag';
+                return 'Måndag';
             case Tuesday:
-                return 'tisdag';
+                return 'Tisdag';
             case Wednesday:
-                return 'onsdag';
+                return 'Onsdag';
             case Thursday:
-                return 'torsdag';
+                return 'Torsdag';
             case Friday:
-                return 'fredag';
+                return 'Fredag';
             case Saturday:
-                return 'lördag';
+                return 'Lördag';
             case Sunday:
-                return 'söndag';
+                return 'Söndag';
         }
     }
     public static inline function stringAllUpFromDateTime( dt: DateTime, len: Int = -1, mondayBased:Bool = false ){
