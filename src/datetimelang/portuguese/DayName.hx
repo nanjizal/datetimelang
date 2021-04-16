@@ -7,7 +7,7 @@ sexta-feira
 sábado
 domingo
 */
-package datetimelang.english;
+package datetimelang.portuguese;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
