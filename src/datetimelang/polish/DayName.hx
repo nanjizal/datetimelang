@@ -1,7 +1,7 @@
 /*
 poniedziałek	wtorek	środa	czwartek	piątek	sobota	niedziela
 */
-package datetimelang.english;
+package datetimelang.polish;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
