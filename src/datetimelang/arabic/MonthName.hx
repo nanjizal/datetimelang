@@ -62,7 +62,7 @@ package datetimelang.english;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
-
+// assumes Arabic - Egypt, Sudan, Yeman for now.
 abstract MonthName( DTMonth ) to DTMonth from DTMonth {
     public inline function new( m: DTMonth ){
         this = m;
@@ -70,93 +70,64 @@ abstract MonthName( DTMonth ) to DTMonth from DTMonth {
     @:from
     static inline public function fromString( s: String ): Null<MonthName> {
         return new MonthName( switch( s.toLowerCase() ){
-            case 'january':
+            case 'يناير':
                 return January;
-            case 'february':
+            case 'فبراير':
                 return February;
-            case 'march':
+            case 'مارس':
                 return March;
-            case 'april':
+            case 'أبريل':
                 return April;
-            case 'may':
+            case 'مايو':
                 return May;
-            case 'june':
+            case 'يونيو':
                 return June;
-            case 'july':
+            case 'يوليه':
                 return July;
-            case 'august':
+            case 'أغسطس':
                 return August;
-            case 'september':
+            case 'سبتمبر':
                 return September;
-            case 'october':
+            case 'أكتوبر':
                 return October;
-            case 'november':
+            case 'نوفمبر':
                 return November;
-            case 'december':
+            case 'ديسمبر':
                 return December;
             case _:
                 return null;
         } );
-    }
-    public inline function name( len: Int = -1 ){
-        var str: String = toString();
-        return if( len == -1 ){
-            str;
-        } else {
-            str.substr( 0, len );
-        }
-    }
-    public inline function lowerCase( len: Int = -1 ){
-        return name( len ).toLowerCase();
-    }
-    public inline function allUpperCase( len: Int = -1 ){
-        return name( len ).toUpperCase();
-    }         
+    }       
     @:to
     public inline function toString() {
         var m: DTMonth = cast this;
         return switch( m ){
             case January:
-                return 'January';
+                return 'يناير';
             case February:
-                return 'February';
+                return 'فبراير';
             case March:
-                return 'March';
+                return 'مارس';
             case April:
-                return 'April';
+                return 'أبريل';
             case May:
-                return 'May';
+                return 'مايو';
             case June:
-                return 'June';
+                return 'يونيو';
             case July:
-                return 'July';
+                return 'يوليه';
             case August:
-                return 'August';
+                return 'أغسطس';
             case September:
-                return 'September';
+                return 'سبتمبر';
             case October:
-                return 'October';
+                return 'أكتوبر';
             case November:
-                return 'November';
+                return 'نوفمبر';
             case December:
-                return 'December';
+                return 'ديسمبر';
         }
-    }
-    public static inline function stringAllUpFromDateTime( dt: DateTime, len: Int = -1 ){
-        var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.upperCase( len );
-        return s;
-    }           
-    public static inline function stringLowerFromDateTime( dt: DateTime, len: Int = -1 ){
-        var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.lowerCase( len );
-        return s;
-    }        
-    public static inline function stringShortFromDateTime( dt: DateTime, len: Int = -1 ){
-        var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.name( len );
-        return s;
-    }        
+    }     
     public static inline function stringFromDateTime( dt: DateTime ){
         var m: MonthName = cast( dt.getMonth(), DTMonth );
         var s: String = m;
