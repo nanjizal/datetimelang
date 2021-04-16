@@ -1,4 +1,4 @@
-package;
+package datetimelang.german;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
