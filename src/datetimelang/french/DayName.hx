@@ -1,4 +1,4 @@
-package;
+package dateimelange.french;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
