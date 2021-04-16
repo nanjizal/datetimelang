@@ -1,7 +1,7 @@
 /*
 januari	februari	mars	april	maj	juni	juli	augusti	september	oktober	november	december
 */
-package datetimelang.english;
+package datetimelang.swedish;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
