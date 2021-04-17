@@ -12079,7 +12079,7 @@ var datetimelang_util_Demo = function() {
 		lang = this1;
 		var s = lang;
 		s = "language " + s;
-		haxe_Log.trace(s,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 20, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace(s,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 20, className : "datetimelang.util.Demo", methodName : "new"});
 		var c = lang;
 		var month;
 		switch(c) {
@@ -12896,7 +12896,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			month = null;
 		}
-		haxe_Log.trace("current month " + month,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 22, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("current month " + month,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 22, className : "datetimelang.util.Demo", methodName : "new"});
 		var c1 = lang;
 		var tmp;
 		switch(c1) {
@@ -13497,7 +13497,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp = null;
 		}
-		haxe_Log.trace("today is a " + tmp,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 23, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("today is a " + tmp,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 23, className : "datetimelang.util.Demo", methodName : "new"});
 		var this2 = datetime_DateTime.add(now,datetime_DTPeriod.Day(1));
 		var dt = this2;
 		var c2 = lang;
@@ -14100,7 +14100,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp1 = null;
 		}
-		haxe_Log.trace("... " + tmp1,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("... " + tmp1,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
 		var this3 = datetime_DateTime.add(now,datetime_DTPeriod.Day(2));
 		var dt1 = this3;
 		var c3 = lang;
@@ -14703,7 +14703,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp2 = null;
 		}
-		haxe_Log.trace("... " + tmp2,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("... " + tmp2,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
 		var this4 = datetime_DateTime.add(now,datetime_DTPeriod.Day(3));
 		var dt2 = this4;
 		var c4 = lang;
@@ -15306,7 +15306,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp3 = null;
 		}
-		haxe_Log.trace("... " + tmp3,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("... " + tmp3,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
 		var this5 = datetime_DateTime.add(now,datetime_DTPeriod.Day(4));
 		var dt3 = this5;
 		var c5 = lang;
@@ -15909,7 +15909,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp4 = null;
 		}
-		haxe_Log.trace("... " + tmp4,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("... " + tmp4,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
 		var this6 = datetime_DateTime.add(now,datetime_DTPeriod.Day(5));
 		var dt4 = this6;
 		var c6 = lang;
@@ -16512,7 +16512,7 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp5 = null;
 		}
-		haxe_Log.trace("... " + tmp5,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("... " + tmp5,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
 		var this7 = datetime_DateTime.add(now,datetime_DTPeriod.Day(6));
 		var dt5 = this7;
 		var c7 = lang;
@@ -17115,8 +17115,8 @@ var datetimelang_util_Demo = function() {
 		default:
 			tmp6 = null;
 		}
-		haxe_Log.trace("... " + tmp6,{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
-		haxe_Log.trace(" ",{ fileName : "src/datetimelang/util/Demo.hx", lineNumber : 27, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace("... " + tmp6,{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 25, className : "datetimelang.util.Demo", methodName : "new"});
+		haxe_Log.trace(" ",{ fileName : "src/datetimelang/util/Demo.js.hx", lineNumber : 27, className : "datetimelang.util.Demo", methodName : "new"});
 	}
 };
 datetimelang_util_Demo.__name__ = true;
