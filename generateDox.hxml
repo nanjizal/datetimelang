@@ -1,0 +1,6 @@
+-D haxe4
+-cmd haxe generateJS.hxml
+-cmd haxe generateCpp.hxml
+-cmd haxelib run dox -i upkeep --title "datetimelang API documentation" -D themeColor 0x8884FF -D source-path https://github.com/nanjizal/datetimelang/tree/master/src/ --toplevel-package datetimelang 
+-cmd cd pages
+-cmd open index.html
