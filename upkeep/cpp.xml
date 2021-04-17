@@ -4414,7 +4414,7 @@
 			<m n=":access"><e>datetime</e></m>
 		</meta>
 	</class>
-	<abstract path="datetimelang.arabic.DayName" params="" file="src/datetimelang/arabic/DateName.hx" module="datetimelang.arabic.DateName">
+	<abstract path="datetimelang.arabic.DayName" params="" file="src/datetimelang/arabic/DayName.hx">
 		<from>
 			<icast><x path="datetime.DTWeekDay"/></icast>
 			<icast field="fromString"><c path="String"/></icast>
@@ -4424,7 +4424,7 @@
 			<icast><x path="datetime.DTWeekDay"/></icast>
 			<icast field="toString"><c path="String"/></icast>
 		</to>
-		<impl><class path="datetimelang.arabic._DateName.DayName_Impl_" params="" file="src/datetimelang/arabic/DateName.hx" private="1" module="datetimelang.arabic.DateName" final="1">
+		<impl><class path="datetimelang.arabic._DayName.DayName_Impl_" params="" file="src/datetimelang/arabic/DayName.hx" private="1" module="datetimelang.arabic.DayName" final="1">
 	<_new public="1" get="inline" set="null" line="26" static="1">
 		<f a="d">
 			<x path="datetime.DTWeekDay"/>
@@ -4484,7 +4484,7 @@
 	</stringFromDateTime>
 </class></impl>
 	</abstract>
-	<class path="datetimelang.arabic._DateName.DayName_Impl_" params="" file="src/datetimelang/arabic/DateName.hx" private="1" module="datetimelang.arabic.DateName" final="1">
+	<class path="datetimelang.arabic._DayName.DayName_Impl_" params="" file="src/datetimelang/arabic/DayName.hx" private="1" module="datetimelang.arabic.DayName" final="1">
 		<_new public="1" get="inline" set="null" line="26" static="1">
 			<f a="d">
 				<x path="datetime.DTWeekDay"/>
@@ -9459,6 +9459,445 @@
 		</main>
 		<new public="1" set="method" line="9"><f a=""><x path="Void"/></f></new>
 		<meta><m n=":dox"><e>hide</e></m></meta>
+	</class>
+	<abstract path="datetimelang.util.Countries" params="" file="src/datetimelang/util/Lang.hx" module="datetimelang.util.Lang">
+		<from><icast><c path="String"/></icast></from>
+		<this><c path="String"/></this>
+		<to><icast><c path="String"/></icast></to>
+		<meta><m n=":enum"/></meta>
+		<impl><class path="datetimelang.util._Lang.Countries_Impl_" params="" file="src/datetimelang/util/Lang.hx" private="1" module="datetimelang.util.Lang" extern="1" final="1">
+	<arabic public="1" get="inline" set="null" expr="cast &quot;arabic&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "arabic"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</arabic>
+	<english public="1" get="inline" set="null" expr="cast &quot;english&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "english"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</english>
+	<french public="1" get="inline" set="null" expr="cast &quot;french&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "french"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</french>
+	<german public="1" get="inline" set="null" expr="cast &quot;german&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "german"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</german>
+	<greek public="1" get="inline" set="null" expr="cast &quot;greek&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "greek"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</greek>
+	<hebrew public="1" get="inline" set="null" expr="cast &quot;hebrew&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "hebrew"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</hebrew>
+	<hindi public="1" get="inline" set="null" expr="cast &quot;hindi&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "hindi"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</hindi>
+	<italian public="1" get="inline" set="null" expr="cast &quot;italian&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "italian"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</italian>
+	<norwegian public="1" get="inline" set="null" expr="cast &quot;norwegian&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "norwegian"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</norwegian>
+	<polish public="1" get="inline" set="null" expr="cast &quot;polish&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "polish"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</polish>
+	<portuguese public="1" get="inline" set="null" expr="cast &quot;portuguese&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "portuguese"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</portuguese>
+	<romanian public="1" get="inline" set="null" expr="cast &quot;romanian&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "romanian"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</romanian>
+	<russian public="1" get="inline" set="null" expr="cast &quot;russian&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "russian"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</russian>
+	<somali public="1" get="inline" set="null" expr="cast &quot;somali&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "somali"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</somali>
+	<spanish public="1" get="inline" set="null" expr="cast &quot;spanish&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "spanish"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</spanish>
+	<swedish public="1" get="inline" set="null" expr="cast &quot;swedish&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "swedish"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</swedish>
+	<turkish public="1" get="inline" set="null" expr="cast &quot;turkish&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "turkish"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</turkish>
+	<welsh public="1" get="inline" set="null" expr="cast &quot;welsh&quot;" line="1" static="1">
+		<x path="datetimelang.util.Countries"/>
+		<meta>
+			<m n=":value"><e>cast "welsh"</e></m>
+			<m n=":impl"/>
+			<m n=":enum"/>
+		</meta>
+	</welsh>
+	<meta><m n=":enum"/></meta>
+</class></impl>
+	</abstract>
+	<class path="datetimelang.util._Lang.Countries_Impl_" params="" file="src/datetimelang/util/Lang.hx" private="1" module="datetimelang.util.Lang" extern="1" final="1">
+		<arabic public="1" get="inline" set="null" expr="cast &quot;arabic&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "arabic"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</arabic>
+		<english public="1" get="inline" set="null" expr="cast &quot;english&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "english"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</english>
+		<french public="1" get="inline" set="null" expr="cast &quot;french&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "french"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</french>
+		<german public="1" get="inline" set="null" expr="cast &quot;german&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "german"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</german>
+		<greek public="1" get="inline" set="null" expr="cast &quot;greek&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "greek"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</greek>
+		<hebrew public="1" get="inline" set="null" expr="cast &quot;hebrew&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "hebrew"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</hebrew>
+		<hindi public="1" get="inline" set="null" expr="cast &quot;hindi&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "hindi"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</hindi>
+		<italian public="1" get="inline" set="null" expr="cast &quot;italian&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "italian"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</italian>
+		<norwegian public="1" get="inline" set="null" expr="cast &quot;norwegian&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "norwegian"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</norwegian>
+		<polish public="1" get="inline" set="null" expr="cast &quot;polish&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "polish"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</polish>
+		<portuguese public="1" get="inline" set="null" expr="cast &quot;portuguese&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "portuguese"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</portuguese>
+		<romanian public="1" get="inline" set="null" expr="cast &quot;romanian&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "romanian"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</romanian>
+		<russian public="1" get="inline" set="null" expr="cast &quot;russian&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "russian"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</russian>
+		<somali public="1" get="inline" set="null" expr="cast &quot;somali&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "somali"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</somali>
+		<spanish public="1" get="inline" set="null" expr="cast &quot;spanish&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "spanish"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</spanish>
+		<swedish public="1" get="inline" set="null" expr="cast &quot;swedish&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "swedish"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</swedish>
+		<turkish public="1" get="inline" set="null" expr="cast &quot;turkish&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "turkish"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</turkish>
+		<welsh public="1" get="inline" set="null" expr="cast &quot;welsh&quot;" line="1" static="1">
+			<x path="datetimelang.util.Countries"/>
+			<meta>
+				<m n=":value"><e>cast "welsh"</e></m>
+				<m n=":impl"/>
+				<m n=":enum"/>
+			</meta>
+		</welsh>
+		<meta><m n=":enum"/></meta>
+	</class>
+	<abstract path="datetimelang.util.Lang" params="" file="src/datetimelang/util/Lang.hx">
+		<from><icast><x path="datetimelang.util.Countries"/></icast></from>
+		<this><x path="datetimelang.util.Countries"/></this>
+		<to><icast><x path="datetimelang.util.Countries"/></icast></to>
+		<impl><class path="datetimelang.util._Lang.Lang_Impl_" params="" file="src/datetimelang/util/Lang.hx" private="1" module="datetimelang.util.Lang" final="1">
+	<_new public="1" get="inline" set="null" line="25" static="1">
+		<f a="c">
+			<x path="datetimelang.util.Countries"/>
+			<x path="datetimelang.util.Lang"/>
+		</f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<all public="1" get="inline" set="null" line="30" static="1"><f a=""><c path="Array"><x path="datetimelang.util.Countries"/></c></f></all>
+	<getWeekDayName public="1" get="inline" set="null" line="37" static="1">
+		<f a="this:dt:?mondayBased" v="::false">
+			<x path="datetimelang.util.Countries"/>
+			<x path="datetime.DateTime"/>
+			<x path="Bool"/>
+			<c path="String"/>
+		</f>
+		<meta><m n=":value"><e>{ mondayBased : false }</e></m></meta>
+	</getWeekDayName>
+	<getMonthName public="1" get="inline" set="null" line="81" static="1">
+		<f a="this:dt:?mondayBased" v="::false">
+			<x path="datetimelang.util.Countries"/>
+			<x path="datetime.DateTime"/>
+			<x path="Bool"/>
+			<c path="String"/>
+		</f>
+		<meta><m n=":value"><e>{ mondayBased : false }</e></m></meta>
+	</getMonthName>
+</class></impl>
+	</abstract>
+	<class path="datetimelang.util._Lang.Lang_Impl_" params="" file="src/datetimelang/util/Lang.hx" private="1" module="datetimelang.util.Lang" final="1">
+		<_new public="1" get="inline" set="null" line="25" static="1">
+			<f a="c">
+				<x path="datetimelang.util.Countries"/>
+				<x path="datetimelang.util.Lang"/>
+			</f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<all public="1" get="inline" set="null" line="30" static="1"><f a=""><c path="Array"><x path="datetimelang.util.Countries"/></c></f></all>
+		<getWeekDayName public="1" get="inline" set="null" line="37" static="1">
+			<f a="this:dt:?mondayBased" v="::false">
+				<x path="datetimelang.util.Countries"/>
+				<x path="datetime.DateTime"/>
+				<x path="Bool"/>
+				<c path="String"/>
+			</f>
+			<meta><m n=":value"><e>{ mondayBased : false }</e></m></meta>
+		</getWeekDayName>
+		<getMonthName public="1" get="inline" set="null" line="81" static="1">
+			<f a="this:dt:?mondayBased" v="::false">
+				<x path="datetimelang.util.Countries"/>
+				<x path="datetime.DateTime"/>
+				<x path="Bool"/>
+				<c path="String"/>
+			</f>
+			<meta><m n=":value"><e>{ mondayBased : false }</e></m></meta>
+		</getMonthName>
+	</class>
+	<abstract path="datetimelang.util.ShiftDateTime" params="" file="src/datetimelang/util/ShiftDateTime.hx">
+		<from><icast><x path="datetime.DateTime"/></icast></from>
+		<this><x path="datetime.DateTime"/></this>
+		<to><icast><x path="datetime.DateTime"/></icast></to>
+		<meta><m n=":forward"/></meta>
+		<impl><class path="datetimelang.util._ShiftDateTime.ShiftDateTime_Impl_" params="" file="src/datetimelang/util/ShiftDateTime.hx" private="1" module="datetimelang.util.ShiftDateTime" final="1">
+	<_new public="1" get="inline" set="null" line="6" static="1">
+		<f a="dateTime">
+			<x path="datetime.DateTime"/>
+			<x path="datetimelang.util.ShiftDateTime"/>
+		</f>
+		<meta><m n=":noCompletion"/></meta>
+	</_new>
+	<getAnotherDay public="1" get="inline" set="null" line="11" static="1"><f a="this:i">
+	<x path="datetime.DateTime"/>
+	<x path="Int"/>
+	<x path="datetimelang.util.ShiftDateTime"/>
+</f></getAnotherDay>
+	<getFirstWeekDay public="1" get="inline" set="null" line="15" static="1">
+		<f a="this:?mondayBased" v=":true">
+			<x path="datetime.DateTime"/>
+			<x path="Bool"/>
+			<x path="Int"/>
+		</f>
+		<meta><m n=":value"><e>{ mondayBased : true }</e></m></meta>
+	</getFirstWeekDay>
+	<daysMonth public="1" get="inline" set="null" line="20" static="1"><f a="this">
+	<x path="datetime.DateTime"/>
+	<x path="Int"/>
+</f></daysMonth>
+	<getWeekdayName public="1" set="method" line="23" static="1"><f a="this:countries">
+	<x path="datetime.DateTime"/>
+	<x path="datetimelang.util.Countries"/>
+	<c path="String"/>
+</f></getWeekdayName>
+	<getMonthName public="1" set="method" line="26" static="1"><f a="this:countries">
+	<x path="datetime.DateTime"/>
+	<x path="datetimelang.util.Countries"/>
+	<c path="String"/>
+</f></getMonthName>
+</class></impl>
+	</abstract>
+	<class path="datetimelang.util._ShiftDateTime.ShiftDateTime_Impl_" params="" file="src/datetimelang/util/ShiftDateTime.hx" private="1" module="datetimelang.util.ShiftDateTime" final="1">
+		<_new public="1" get="inline" set="null" line="6" static="1">
+			<f a="dateTime">
+				<x path="datetime.DateTime"/>
+				<x path="datetimelang.util.ShiftDateTime"/>
+			</f>
+			<meta><m n=":noCompletion"/></meta>
+		</_new>
+		<getAnotherDay public="1" get="inline" set="null" line="11" static="1"><f a="this:i">
+	<x path="datetime.DateTime"/>
+	<x path="Int"/>
+	<x path="datetimelang.util.ShiftDateTime"/>
+</f></getAnotherDay>
+		<getFirstWeekDay public="1" get="inline" set="null" line="15" static="1">
+			<f a="this:?mondayBased" v=":true">
+				<x path="datetime.DateTime"/>
+				<x path="Bool"/>
+				<x path="Int"/>
+			</f>
+			<meta><m n=":value"><e>{ mondayBased : true }</e></m></meta>
+		</getFirstWeekDay>
+		<daysMonth public="1" get="inline" set="null" line="20" static="1"><f a="this">
+	<x path="datetime.DateTime"/>
+	<x path="Int"/>
+</f></daysMonth>
+		<getWeekdayName public="1" set="method" line="23" static="1"><f a="this:countries">
+	<x path="datetime.DateTime"/>
+	<x path="datetimelang.util.Countries"/>
+	<c path="String"/>
+</f></getWeekdayName>
+		<getMonthName public="1" set="method" line="26" static="1"><f a="this:countries">
+	<x path="datetime.DateTime"/>
+	<x path="datetimelang.util.Countries"/>
+	<c path="String"/>
+</f></getMonthName>
 	</class>
 	<abstract path="datetimelang.welsh.DayName" params="" file="src/datetimelang/welsh/DayName.hx">
 		<from>

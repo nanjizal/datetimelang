@@ -1,4 +1,5 @@
 -lib datetime
+-lib htmlHelper
 
 -D doc-gen
 

@@ -1,0 +1,12 @@
+-lib datetime
+-lib htmlHelper
+-js test.js
+-cp src
+
+-main datetimelang.util.Demo
+-D js-flatten 
+
+
+-cmd echo '<!DOCTYPE html><meta charset="UTF-8"><html><body><script src="test.js"></script></body></html>' >index.html
+# open html on mac os.
+-cmd open index.html
