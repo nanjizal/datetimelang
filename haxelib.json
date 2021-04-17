@@ -1,0 +1,12 @@
+{
+    "name"         : "datetimelang",
+    "url"          : "https://github.com/nanjizal/datetimelang#datetimelang",
+    "license"      : "MIT",
+    "tags"         : ["cross" ],
+    "description"  : "Multiple spoken language helpers for day/month names when using haxe 'datetime' library.",
+    "version"      : "0.0.1",
+    "releasenote"  : "See https://github.com/nanjizal/datetimelang/blob/master/CHANGELOG.md",
+    "classPath"    : "src",
+    "contributors" : ["Nanjizal"],
+    "dependencies" : {"datetime": ""}
+}
