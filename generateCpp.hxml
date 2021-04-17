@@ -1,6 +1,8 @@
 -D doc-gen
 -lib datetime
 
+--macro include('datetimelang')
+
 -cp src
 -main datetimelang.upkeep.Doc
 --no-output
