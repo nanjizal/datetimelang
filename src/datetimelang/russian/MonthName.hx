@@ -1,21 +1,11 @@
 package datetimelang.russian;
+/*
+январь    февраль    март    апрель    май    июнь    июль    август    сентябрь    октябрь     ноябрь     декабрь
+*/
+
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;
-/* январь
-(janvar')	февраль
-(fevral’)	март
-(mart)	апрель
-(aprel')	май
-(maj)	июнь
-(ijun')	июль
-(ijul')	август
-(avgust)	сентябрь
-(sentjabr')	октябрь
-(oktjabr')	ноябрь
-(nojabr')	декабрь
-(dekabr') */
-январь	февраль	март	апрель	май	июнь	июль	август	сентябрь октябрь 	ноябрь декабрь
 
 abstract MonthName( DTMonth ) to DTMonth from DTMonth {
     public inline function new( m: DTMonth ){
@@ -60,10 +50,10 @@ abstract MonthName( DTMonth ) to DTMonth from DTMonth {
             str.substr( 0, len );
         }
     }
-    public inline function lowerCase( len: Int = -1 ){
+    public inline function toLowerCase( len: Int = -1 ){
         return name( len ).toLowerCase();
     }
-    public inline function allUpperCase( len: Int = -1 ){
+    public inline function alltoUpperCase( len: Int = -1 ){
         return name( len ).toUpperCase();
     }         
     @:to
@@ -98,12 +88,12 @@ abstract MonthName( DTMonth ) to DTMonth from DTMonth {
     }
     public static inline function stringAllUpFromDateTime( dt: DateTime, len: Int = -1 ){
         var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.upperCase( len );
+        var s: String = m.name( len ).toUpperCase();
         return s;
     }           
     public static inline function stringLowerFromDateTime( dt: DateTime, len: Int = -1 ){
         var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.lowerCase( len );
+        var s: String = m.name( len ).toLowerCase();
         return s;
     }        
     public static inline function stringShortFromDateTime( dt: DateTime, len: Int = -1 ){

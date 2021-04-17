@@ -12,7 +12,7 @@ Oκτώβριος
 Νοέμβριος
 Δεκέμβριος
 */
-package datetimelang.english;
+package datetimelang.greek;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;

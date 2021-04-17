@@ -58,10 +58,10 @@ abstract DayName( DTWeekDay ) to DTWeekDay from DTWeekDay {
             case Sunday:
                 return 'יום ראשון';
         }
-    }
+    }      
     public static inline function stringFromDateTime( dt: DateTime, mondayBased:Bool = false ): String {
-        var m: WeekDayLongName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m;
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d;
         return s;
     }
 }

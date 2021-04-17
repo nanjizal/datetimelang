@@ -37,10 +37,10 @@ abstract DayName( DTWeekDay ) to DTWeekDay from DTWeekDay {
             str.substr( 0, len );
         }
     }
-    public inline function lowerCase( len: Int = -1 ){
+    public inline function toLowerCase( len: Int = -1 ){
         return name( len ).toLowerCase();
     }
-    public inline function allUpperCase( len: Int = -1 ){
+    public inline function alltoUpperCase( len: Int = -1 ){
         return name( len ).toUpperCase();
     }
     @:to
@@ -64,23 +64,23 @@ abstract DayName( DTWeekDay ) to DTWeekDay from DTWeekDay {
         }
     }
     public static inline function stringAllUpFromDateTime( dt: DateTime, len: Int = -1, mondayBased:Bool = false ){
-        var m: MonthName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m.upperCase( len );
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d.name( len ).toUpperCase();
         return s;
-    }           
+    }
     public static inline function stringLowerFromDateTime( dt: DateTime, len: Int = -1, mondayBased:Bool = false ){
-        var m: MonthName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m.lowerCase( len );
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d.name( len ).toLowerCase();
         return s;
-    }        
+    }
     public static inline function stringShortFromDateTime( dt: DateTime, len: Int = -1, mondayBased:Bool = false ){
-        var m: MonthName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m.name( len );
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d.name( len );
         return s;
-    }        
+    }
     public static inline function stringFromDateTime( dt: DateTime, mondayBased:Bool = false ): String {
-        var m: WeekDayLongName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m;
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d;
         return s;
     }
 }

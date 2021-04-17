@@ -49,10 +49,10 @@ abstract MonthName( DTMonth ) to DTMonth from DTMonth {
             str.substr( 0, len );
         }
     }
-    public inline function lowerCase( len: Int = -1 ){
+    public inline function toLowerCase( len: Int = -1 ){
         return name( len ).toLowerCase();
     }
-    public inline function allUpperCase( len: Int = -1 ){
+    public inline function alltoUpperCase( len: Int = -1 ){
         return name( len ).toUpperCase();
     }   
     @:to
@@ -87,12 +87,12 @@ abstract MonthName( DTMonth ) to DTMonth from DTMonth {
     }
     public static inline function stringAllUpFromDateTime( dt: DateTime, len: Int = -1 ){
         var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.upperCase( len );
+        var s: String = m.name( len ).toUpperCase();
         return s;
     }           
     public static inline function stringLowerFromDateTime( dt: DateTime, len: Int = -1 ){
         var m: MonthName = cast( dt.getMonth(), DTMonth );
-        var s: String = m.lowerCase( len );
+        var s: String = m.name( len ).toLowerCase();
         return s;
     }        
     public static inline function stringShortFromDateTime( dt: DateTime, len: Int = -1 ){

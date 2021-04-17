@@ -58,7 +58,7 @@ Morocco
 نُوَنبِر
 دُجَنبِر
 */
-package datetimelang.english;
+package datetimelang.arabic;
 import datetime.utils.DateTimeUtils;
 import datetime.DateTime;
 import datetime.DateTimeInterval;

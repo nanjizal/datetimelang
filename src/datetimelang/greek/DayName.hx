@@ -65,15 +65,15 @@ abstract DayName( DTWeekDay ) to DTWeekDay from DTWeekDay {
             case Sunday:
                 return 'Κυριακή';
         }
-    }     
+    }
     public static inline function stringShortFromDateTime( dt: DateTime, len: Int = -1, mondayBased:Bool = false ){
-        var m: MonthName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m.name( len );
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d.name( len );
         return s;
-    }        
+    }
     public static inline function stringFromDateTime( dt: DateTime, mondayBased:Bool = false ): String {
-        var m: WeekDayLongName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
-        var s: String = m;
+        var d: DayName = cast( dt.getWeekDay(mondayBased), DTWeekDay );
+        var s: String = d;
         return s;
     }
 }
