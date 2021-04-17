@@ -1,0 +1,17 @@
+-lib datetime
+
+-D doc-gen
+
+--macro include('datetimelang')
+
+-cp src
+-main datetimelang.upkeep.Doc
+--no-output
+
+--each
+
+--next
+-xml upkeep/js.xml
+-js foo.js
+
+# -D dump==pretty
