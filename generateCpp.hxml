@@ -1,0 +1,15 @@
+-D doc-gen
+-lib datetime
+
+-cp src
+-main datetimelang.upkeep.Doc
+--no-output
+
+--each
+
+--next
+-xml upkeep/cpp.xml
+-cpp foo
+
+
+# -D dump==pretty
